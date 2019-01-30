@@ -1,0 +1,17 @@
+Pig Latin Psuedocode
+input from fstream
+split string and isolate components to convert into pig latin
+based off of rules described from multiple sources
+1. Most words end in 'ay'
+2.if a word starts with a consonant and a vowel put the first letter of the word at the end of the word and add ay (Happy = appyh+ay =appyhay)
+3.if a word starts with two consonants move the two consonants to the end of the word and add 'ay'
+(Child=ildch+ay=ildchay)
+4.if a word starts with a vowel add the word "way" at the end of the word
+(Awesome=Awesome+ay=Awesomeway)
+Ask for filename (.txt) move file name into string var
+open with fstream using the filename string as ref
+Create file with "pg" concatenated to new file name
+move file pointer to first Cell? (input file)
+move string into filebuf 
+F(txt,)=>PRSER(seperate string and)
+
