@@ -1,27 +1,49 @@
 #include<iostream>
-#include<string.
+#include<string>
+#include<cmath>
+#include"Shapes.h"
 using namespace std;
 int main ()
 {
 string choice;
-cout<<"\nEnter a Shape to compute";
+int choiceint;
+double result;
+Box box;
+Sphere sph;
+Pyramid pyr;
+cout<<"\nEnter a Shape to Solve";
 cout<<"\nYour choices are: Box,Sphere,Pyramid";
 cout<<"\n>";
 getline (cin,choice);
-
-}
-
-class Box
+if (choice == "Box,BOX,box,b")
 {
-int l,w,h;
+    choiceint = 0;
 }
-
-class Sphere
+else if (choice == "Sphere,SPHERE,sphere,s")
 {
-
+    choiceint = 1;
 }
-
-class Pyramid
+else if (choice == "Pyramid,PYRAMID,pyramid,p")
+switch(choiceint)
 {
+    case 0:
+    cout<<"\nLength?"<<endl;
+    cin>>box.l;
+    cout<<"\nWidth?"<<endl;
+    cin>>box.w;
+    cout<<"\nHeight?"<<endl;
+    cin>>box.h;
+    result = box.l*box.w*box.h;
+cout<<"\nVolume:"<<result<<endl;
+    break;
+
+    case 1:
+cout<<"\n(R)adius or (D)iameter?";
+    break;
+
+    case 2:
+
+    break;
+}
 
 }
