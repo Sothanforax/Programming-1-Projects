@@ -15,15 +15,18 @@ cout<<"\nEnter a Shape to Solve";
 cout<<"\nYour choices are: Box,Sphere,Pyramid";
 cout<<"\n>";
 getline (cin,choice);
-if (choice == "Box,BOX,box,b")
+if (choice == "Box,BOX,box")
 {
     choiceint = 0;
 }
-else if (choice == "Sphere,SPHERE,sphere,s")
+else if (choice == "Sphere,SPHERE,sphere")
 {
     choiceint = 1;
 }
-else if (choice == "Pyramid,PYRAMID,pyramid,p")
+else if (choice == "Pyramid,PYRAMID,pyramid")
+{
+choiceint = 2;
+}
 switch(choiceint)
 {
     case 0:
