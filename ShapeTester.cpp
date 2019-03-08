@@ -18,38 +18,42 @@ cout<<"\nVolume:"<<result;
 void getsa()
 {
 result = l*l*6;
-cout<<"\nSurface Area:" << result;
+cout<<"\nSurface Area:"<<result<<endl;;
 }
 };
 class Sphere
 {
 private:
-double r,d;
-double result;
-double pi = 3.141592654;
-//Texas Instruments pi
+double rad,dia;
+double rslt;
 int charconv;
 public:
 char raddiam;
 void getvol(double inptvol)
 {
-    if (raddiam == 'r') 
+    if (raddiam == 'r' || raddiam == 'R') 
     {
      charconv = 2;   
     }
-    else if (raddiam == 'd')
+    else if (raddiam == 'd' || raddiam == 'D')
     {
         charconv = 1;
     }
     switch (charconv)
     {
         case 1:
-        d = inptvol;
+        dia = inptvol;
+        rslt = (1*3.14*dia*dia*dia)/6;
+        cout<<"Volume:"<<rslt<<endl;
+        rslt = 3.14*dia*dia;
+        cout<<"Surface area:"<<rslt<<endl;
         break;
         case 2:
-        r = inptvol;
-        result = 4/3*pi*r*r*r;
-        cout<<"\nVolume:"<<result;
+        rad = inptvol;
+        rslt = (4*3.14*rad*rad*rad)/3;
+        cout<<"\nVolume:"<<rslt<<endl;
+        rslt = 4*3.14*rad*rad;
+        cout<<"Surface area:"<<rslt<<endl;
         break;
 }
 }
@@ -108,6 +112,7 @@ cout<<"\n(R)adius or (D)iameter?"<<endl;
 cin>>sph.raddiam;
 cout<<"\nRadius/Diameter?"<<endl;
 cin>>input[0];
+sph.getvol(input[0]);
     break;
 
     case 3:
