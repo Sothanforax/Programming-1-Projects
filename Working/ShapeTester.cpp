@@ -62,7 +62,20 @@ class Pyramid
 {
 private:
 double result;
-
+double l,w,h;
+public:
+void getvol(double bl,double bw,double ph)
+{
+    l = bl;
+    w = bw;
+    h = ph;
+    result = l*w*h/3;
+    cout<<"\nVolume:"<<result<<endl;
+}
+void getsa()
+{
+    cout<<"Surface Area:Im not implementing that formula."<<endl;
+}
 };
 int main ()
 {
@@ -111,12 +124,20 @@ box.getsa();
     case 2:
 cout<<"\n(R)adius or (D)iameter?"<<endl;
 cin>>sph.raddiam;
-cout<<"\nRadius/Diameter?"<<endl;
+cout<<"\nThe Radius/Diameter?"<<endl;
 cin>>input[0];
 sph.getvol(input[0]);
     break;
 
     case 3:
+    cout<<"\nBase Length?"<<endl;
+    cin>>input[0];
+    cout<<"Base Width"<<endl;
+    cin>>input[1];
+    cout<<"Height?"<<endl;
+    cin>>input[2];
+    pyr.getvol(input[0],input[1],input[2]);
+    pyr.getsa();
     break;
 }
 return 0;
