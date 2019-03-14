@@ -25,7 +25,7 @@ class Sphere
 {
 private:
 double rad,dia;
-double rslt;
+double result;
 int charconv;
 public:
 char raddiam;
@@ -43,17 +43,17 @@ void getvol(double inptvol)
     {
         case 1:
         dia = inptvol;
-        rslt = (1*3.14*dia*dia*dia)/6;
-        cout<<"Volume:"<<rslt<<endl;
-        rslt = 3.14*dia*dia;
-        cout<<"Surface area:"<<rslt<<endl;
+        result = (1*3.14*dia*dia*dia)/6;
+        cout<<"Volume:"<<result<<endl;
+        result = 3.14*dia*dia;
+        cout<<"Surface area:"<<result<<endl;
         break;
         case 2:
         rad = inptvol;
-        rslt = (4*3.14*rad*rad*rad)/3;
-        cout<<"\nVolume:"<<rslt<<endl;
-        rslt = 4*3.14*rad*rad;
-        cout<<"Surface area:"<<rslt<<endl;
+        result = (4*3.14*rad*rad*rad)/3;
+        cout<<"\nVolume:"<<result<<endl;
+        result = 4*3.14*rad*rad;
+        cout<<"Surface area:"<<result<<endl;
         break;
 }
 }
@@ -62,6 +62,7 @@ class Pyramid
 {
 private:
 double result;
+
 };
 int main ()
 {
