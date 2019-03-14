@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include"Shapes.h"
 using namespace std;
 
 int main ()
